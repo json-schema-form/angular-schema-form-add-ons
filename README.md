@@ -9,7 +9,7 @@ This project has three aspects:
 
 ### ASF Version specific information, examples, and and tools
 These are stored here, in this documentation and the files of this repository.
-For each ASF major version, a new branch is created. 
+For each ASF major version, the previous version gets its own branch.
 
 ### ASF Version agnostic information, recommendations, guidelines, tips & tricks
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
