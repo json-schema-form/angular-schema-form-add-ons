@@ -7,7 +7,7 @@ This is a repository where information, tools for and discussions about Angular 
 
 This project has three aspects:
 
-### ASF Version specific information, examples, and and tools
+### ASF Version specific information, examples and tools
 These are stored here, in this documentation and the files of this repository.
 For each ASF major version, the previous version gets its own branch.
 
