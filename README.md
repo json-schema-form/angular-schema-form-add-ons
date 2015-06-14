@@ -17,17 +17,17 @@ For each ASF major version, the previous version gets its own branch.
 
 The original "Extending Schema Form"-article is located [here](https://github.com/OptimalBPM/angular-schema-form-plugins/blob/master/documentation/extending.md).
 
-### WIKI
+### [WIKI](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
 **ASF Version agnostic information, recommendations, guidelines, tips & tricks**
 
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
 
-### GITTER
+### GITTER [gitter chat room. ![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Discussions and questions about ASF plugin development in general**
 
-These are conducted in the [gitter chat room. ![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+These are conducted in the gitter chat.
 
-### ISSUES
+### [ISSUES](https://github.com/OptimalBPM/angular-schema-form-plugins/issues) for this project. Follow them to get the neccessary information.
 **News relevant for plug-in-development**
 
 These are posted as [issues](https://github.com/OptimalBPM/angular-schema-form-plugins/issues) for this project. Follow them to get the neccessary information.
