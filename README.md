@@ -9,7 +9,7 @@ This is a repository where information, tools for and discussions about [Angular
 
 This project has three areas:
 
-### HERE
+### [HERE](https://github.com/OptimalBPM/angular-schema-form-plugins/blob/master/README.md)
 **ASF Version specific documentation, examples and tools**
 
 These are stored here, in this documentation and the files of this repository.
@@ -22,7 +22,7 @@ The original "Extending Schema Form"-article is located [here](https://github.co
 
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
 
-### GITTER [![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+### [GITTER](https://gitter.im/OptimalBPM/angular-schema-form-plugins). [![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Discussions and questions about ASF plugin development in general**
 
 These are conducted in the [gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-plugins).
