@@ -9,11 +9,11 @@ This is a repository where information, tools for and discussions about [Angular
 
 This project has three aspects:
 
-### ASF Version specific information, examples and tools
+### ASF Version specific documentation, examples and tools
 These are stored here, in this documentation and the files of this repository.
 For each ASF major version, the previous version gets its own branch.
 
-The original "Extending Schema Form"-article is located [here](https://github.com/OptimalBPM/angular-schema-form-plugins/blob/master/extending.md).
+The original "Extending Schema Form"-article is located [here](https://github.com/OptimalBPM/angular-schema-form-plugins/blob/master/documentation/extending.md).
 
 ### ASF Version agnostic information, recommendations, guidelines, tips & tricks
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
