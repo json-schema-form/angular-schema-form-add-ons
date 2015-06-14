@@ -30,9 +30,11 @@ For each ASF major version, the previous version gets its own branch.
 The original "Extending Schema Form"-article is located [here](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/documentation/extending.md).
 
 ### [ISSUES](https://github.com/OptimalBPM/angular-schema-form-add-ons/issues)
-News, information and news relevant for ASF add-on-development
+**News, information and news relevant for ASF add-on-development**
 
 These are posted as [issues](https://github.com/OptimalBPM/angular-schema-form-add-ons/issues) for this project. 
 Follow them to get the neccessary information.
+
+(not sure if that works well, though, we'll see)
 
  
