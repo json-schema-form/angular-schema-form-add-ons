@@ -22,10 +22,10 @@ The original "Extending Schema Form"-article is located [here](https://github.co
 
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-plugins/wiki)
 
-### GITTER [gitter chat room. ![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+### GITTER [![ASFP gitter room https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Discussions and questions about ASF plugin development in general**
 
-These are conducted in the gitter chat.
+These are conducted in the [gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-plugins).
 
 ### [ISSUES](https://github.com/OptimalBPM/angular-schema-form-plugins/issues) for this project. Follow them to get the neccessary information.
 **News relevant for plug-in-development**
