@@ -1,11 +1,11 @@
 
-*NOTE: This is just created, you that have been invited and wondering what the hell this is about, please take a look in the gitter chat*
+*NOTE: This repo was just created, you that have been invited and wondering what the hell this is about, please take a look in the gitter chat*
 
 [![Join the chat at https://gitter.im/OptimalBPM/angular-schema-form-plugins](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-plugins?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Angular schema form plugins
 
-This is a repository where information, tools for and discussions about Angular Schema Form plug-in development are held. Its purpose is to lower the entry for plug-in development and provide a means to coordinate efforts.
+This is a repository where information, tools for and discussions about [Angular Schema Form](https://github.com/Textalk/angular-schema-form) plug-in development are held. Its purpose is to lower the entry for plug-in development and provide a means to coordinate efforts.
 
 This project has three aspects:
 
