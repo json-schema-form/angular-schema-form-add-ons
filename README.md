@@ -15,6 +15,8 @@ Its purpose is to flatten the learning curve for add-on development and provide 
 
 These are stored in the [wiki](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki)
 
+***HEY! New to creating ASF add-ons? This is where to go: [Creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on).***
+
 ### [GITTER](https://gitter.im/OptimalBPM/angular-schema-form-add-ons) [![ASFAO gitter room https://gitter.im/OptimalBPM/angular-schema-form-add-ons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-add-ons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Discussions and questions about ASF plugin development in general**
 
