@@ -1,14 +1,75 @@
-Extending Schema Form
+Extending Angular Schema Form(ASF)
 =====================
-Schema Form is designed to be easily extended and there are two basic ways to do it:
+ASF is designed to be easily extended and there are two basic ways to do it:
 
-1. Add a new type of field
-2. Add a new decorator
+1. Add a new field type, for example, to make add-ons like the [date picker](https://github.com/Textalk/angular-schema-form-datepicker).
+2. Add a new decorator, when you need to make general behavioral changes for your application(?)
 
-Adding a Field
---------------
-To add a new field to Schema Form you need to create a new form type and match that form type with
-a template snippet. To do this you use the `schemaFormDecoratorsProvider.addMapping()` function.
+An "ASF user" does not mean an end-user, but a developer using of ASF.
+
+## Adding a field type
+
+### What makes a field type
+
+A field type is made up of the following parts:
+1. A HTML template that provides what i should contain
+2. An angular config file that adds the extra configuration to the Schema form
+3. Optionally: Additional controllers and directives. 
+
+The minimal configuration for implementing a new field type is 1 and 2, and is represented by the 
+[minimal example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/minimal).
+
+More advanced functionality is shown in the [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase)
+
+### Creating a field type/add-on
+
+*Before you embark on creating a new field type, please read the [creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on) article.*
+
+#### The HTML template
+The HTML template defines the UI of the field type. [Minimal example](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/examples/minimal/src/angular-schema-form-minimal.html)
+
+Basically, ASF shows that instead of the built-in UIs when it encounters either a specified combination of schema types, or a "type" setting in the form. 
+
+#### Make ASF show my field type when it is supposed to
+Just creating a template is not enough to make ASF aware, neither of the field types existance, or when to use it.
+ASF provides two ways to decide when to show a field type, implicitly or explicitly.
+
+To configure ASF document for this, module.config is used.
+This document will use the [configuration of the "minimal" example](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/examples/minimal/src/angular-schema-form-minimal.js) 
+to demonstrate these. 
+
+In it, the configuration is applied to schema form as a function definition:
+    
+    angular.module('schemaForm').config(['schemaFormProvider',
+        'schemaFormDecoratorsProvider', 'sfPathProvider',
+        function(schemaFormProvider, schemaFormDecoratorsProvider, sfPathProvider) {
+        
+        -- Default mappings goes in here..
+        
+        -- Explicit type mappings also..
+        
+    }]);        
+
+
+
+##### Implicitly, default UI for a schema field
+
+##### Explicitly specified field type
+Example 1, an ASF user specifies the field type in the form definition:
+    
+    {
+        "key": "minimal_form_type",
+        "title": "Example of minimal editor via form type",
+        "type": "minimal"
+    }
+
+If a field has a specified type, as in the Example 1, a mapping is used. 
+That mapping 
+
+
+
+
+
 
 Ex. from the [datepicker add-on](https://github.com/Textalk/angular-schema-form-datepicker/blob/master/src/bootstrap-datepicker.js#L18)
 ```javascript
