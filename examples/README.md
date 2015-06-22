@@ -4,6 +4,12 @@
 
 This folder contains examples of add-ons showcasing different aspects of the ASF add-on architecture.
 
+To play around with these, you need to clone this repository:
+    
+    git clone https://github.com/OptimalBPM/angular-schema-form-add-ons.git
+
+This will create a local clone in the angular-schema-form-add-ons subfolder.
+
 ## camelCase
 
 The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) just uses a normal input, and a button that changes whatever string has been entered into camelCase.
