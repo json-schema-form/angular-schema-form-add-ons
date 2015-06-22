@@ -12,6 +12,8 @@ Its purpose is to flatten the learning curve for add-on development and provide 
 ## *H E Y !!*
 ***New to creating ASF add-ons? This is where to go: [Creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on).***
 
+Looking for information and collaboration? Read on:
+
 ### [WIKI](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki)
 **ASF Version agnostic information, recommendations, guidelines, tutorials, tips & tricks**
 
