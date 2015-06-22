@@ -15,7 +15,7 @@ Both examples will look better if you install them with bootstrap(the demos have
 ## Minimal
 
 The [minimal example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/minimal) simply 
-uses an input to edit the model. It has a short text proving that it is the actual
+uses an input to edit the model. It has a short text proving that it is the actual add-on being displayed.
 
 ## camelCase
 
