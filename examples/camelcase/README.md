@@ -5,7 +5,7 @@ camelCase add-on
 
 This example presents a normal input field and a button that changes whatever string has been entered into camelCase.
 
-There is a demo, basically just the published html, running at: 
+There is a demo, basically just the published html, running at:<br /> 
 http://demo.optimalbpm.se/angular-schema-form-add-ons/examples/camelcase/example.html
 
 It uses:
