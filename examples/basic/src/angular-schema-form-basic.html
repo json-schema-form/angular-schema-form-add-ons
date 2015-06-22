@@ -1,0 +1,9 @@
+<div ng-class="{'has-error': hasError()}">
+    <label ng-show="showTitle()">{{form.title}}</label>
+
+    <div basic>
+        <input name="input_field" ng-model="$$value$$"/>
+        <button type="button" ng-click="makeCamelCase()">camelCase it</button>
+    </div>
+    <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>
+</div>
