@@ -3,3 +3,23 @@
 ## Angular schema form add-ons - Tools
 
 This folder contains tools for add-on development.
+
+## create_new_add_on.py
+
+This is a python script that copies and renames the "minimal" example and its references to create a new add-on.
+
+Arguments:
+
+--dest - The destination folder where the add-on creates a folder named after the --name<br />
+--name - The name of the new add-on<br />
+--author - The author of the new add-on<br />
+
+
+Usage: `create_new_add_on.py [-h] [--dest DEST] --name NAME --author AUTHOR`
+
+Example that creates an add-on at "~/development/test":
+
+```bash
+python3.4 create_new_add_on.py --dest=~/development --name="test" --author="test"
+```
+ 
