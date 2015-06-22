@@ -1,6 +1,6 @@
 Extending Angular Schema Form(ASF)
 =====================
-ASF is designed to be easily extended and there are two basic ways to do it:
+ASF is designed to be easily extended and there are two ways to do it:
 
 1. Add a new field type, for example, to make add-ons like the [date picker](https://github.com/Textalk/angular-schema-form-datepicker).
 2. Add a new decorator, when you need to make general behavioral changes for your application(?)
@@ -9,11 +9,11 @@ ASF is designed to be easily extended and there are two basic ways to do it:
 
 ## Adding a field type
 
-### What a field type?
+### What is a field type?
 
-A ASF field type is consists of of the following parts:
+A ASF field type consists of the following parts:
 
-1. A HTML template that provides what it should contain
+1. A HTML template that define the UI 
 2. An AngularJS config file that adds the extra configuration to ASF
 3. Optionally: Additional controllers and directives. 
 
