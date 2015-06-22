@@ -5,16 +5,16 @@ ASF is designed to be easily extended and there are two basic ways to do it:
 1. Add a new field type, for example, to make add-ons like the [date picker](https://github.com/Textalk/angular-schema-form-datepicker).
 2. Add a new decorator, when you need to make general behavioral changes for your application(?)
 
-An "ASF user" does not mean an end-user, but a developer using of ASF.
+*In this text, an "ASF user" does not mean an end-user, but a developer using ASF.*
 
 ## Adding a field type
 
-### What makes a field type?
+### What a field type?
 
-A field type is made up of the following parts:
+A ASF field type is consists of of the following parts:
 
 1. A HTML template that provides what it should contain
-2. An angular config file that adds the extra configuration to ASF
+2. An AngularJS config file that adds the extra configuration to ASF
 3. Optionally: Additional controllers and directives. 
 
 The minimal configuration for implementing a new field type is 1 and 2, and is represented by the 
@@ -27,51 +27,54 @@ More advanced functionality is shown in the [camelCase example](https://github.c
 *Before you embark on creating a new field type, please read the [creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on) article.*
 
 #### The HTML template
-The HTML template defines the UI(view) of the field type. ["Minimal" example](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/examples/minimal/src/angular-schema-form-minimal.html).
+The HTML template defines the UI(view) of the field type, what the user sees. 
+The ["minimal" example](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/examples/minimal/src/angular-schema-form-minimal.html) 
+shows a very basic implementation.
 
-Basically, ASF shows that instead of the built-in UI when it encounters either a specified combination of schema types, or a "type" setting in the form. 
+Basically, ASF shows the template instead of the built-in UI when it encounters either a specified combination of schema types, or a "type" field type setting in the form. 
 
 There is more on what the template can do later on, in the [Scope and helper functions](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/New_Extending/documentation/extending.md#Scope)-section.
 
 #### Make ASF show my field type when it is supposed to
 
-Just creating a template is not enough to make ASF aware neither of the existence of the field type, or when to use it.
+Just creating a template is not enough, ASF needs to know when to use it.
 ASF provides two ways to decide when to show a field type, implicitly or explicitly.
 
-To configure ASF document for this, module.config is used.
+To configure ASF for this, module.config is used.
 This document will use the [configuration of the "minimal" example](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/examples/minimal/src/angular-schema-form-minimal.js) 
-to demonstrate these and try to explain it. It is recommended to open the file in a tab for reference. 
+to demonstrate these and try to explain it. It is recommended to open the example in another tab for reference. 
 
 In it, the configuration is applied to schema form as a function definition:
 ```javascript
-    angular.module('schemaForm').config(['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider',
-        function(schemaFormProvider, schemaFormDecoratorsProvider, sfPathProvider) {
-        
-        // Default mappings goes in here..
-        
-        // Explicit type mappings also..
-        
-        // Register it as a directive
-    }]);        
+angular.module('schemaForm').config(['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider',
+    function(schemaFormProvider, schemaFormDecoratorsProvider, sfPathProvider) {
+    
+    // Default mappings goes in here..
+    
+    // Explicit type mappings also..
+    
+    // Register it as a directive
+}]);        
 ```
 
+So first, how to show it as as per default:
 
 ##### Implicitly, default UI for a schema field
 
-The schema (not to be confused with the "type" in the form) specifies a combination of data type and format that 
+Let's assume that the schema specifies a combination of data type(not to be confused with the "type" in the form)  and format that 
 should get "our" field type as default:
 ```javascript
-    minimal_format: {
-        type: "string",
-        format: "minimal",
-        description: "When you edit this, it is in the add-ons input box."
-    },
+minimal_format: {
+    type: "string",
+    format: "minimal",
+    description: "When you edit this, it is in the add-ons input box."
+},
 ```
 We want our field type to be use in this situation. 
-You achieve this by adding to the `schemaFormProvider.defaults` object. The `schemaFormProvider.defaults`
+You achieve this by adding it to the `schemaFormProvider.defaults` object. The `schemaFormProvider.defaults`
 is an object with a key for each type *in JSON Schema* with a array of functions as its value.
 
-```javscript
+```javascript
 var defaults = {
   string: [],
   object: [],
@@ -80,28 +83,30 @@ var defaults = {
   boolean: [],
   array: []
 };
+```
 
-When schema form traverses the JSON Schema to create default form definitions it first checks the
+When ASF traverses the JSON Schema to create default form definitions it first checks the
 *JSON Schema type* and then calls on each function in the corresponding list *in order* until a
 function actually returns something. That is then used as a default.
 
 So, to make ASF show the "minimal" field type, a callback function is registered in the defaults array:
-```javascript
-    // First, we want this to be the default for a combination of schema parameters
-    var minimal = function (name, schema, options) {
-        if (schema.type === 'string' && schema.format == 'minimal') {
-            // Initiate a form provider
-            var f = schemaFormProvider.stdFormObj(name, schema, options);
-            f.key = options.path;
-            f.type = 'minimal';
-            // Add it to the lookup dict (for internal use)
-            options.lookup[sfPathProvider.stringify(options.path)] = f;
-            return f;
-        }
-    };
 
-    // Add our default to the defaults array
-    schemaFormProvider.defaults.string.unshift(minimal);
+```javascript
+// First, we want this to be the default for a combination of schema parameters
+var minimal = function (name, schema, options) {
+    if (schema.type === 'string' && schema.format == 'minimal') {
+        // Initiate a form provider
+        var f = schemaFormProvider.stdFormObj(name, schema, options);
+        f.key = options.path;
+        f.type = 'minimal';
+        // Add it to the lookup dict (for internal use)
+        options.lookup[sfPathProvider.stringify(options.path)] = f;
+        return f;
+    }
+};
+
+// Add our default to the defaults array
+schemaFormProvider.defaults.string.unshift(minimal);
 ```
 
 Now, when ASF loops the defaults-array for "string", one entry will return a form instance when the type is "string" and schema.format is "minimal".
@@ -112,7 +117,7 @@ all "string" type fields would get the "minimal" field type UI.
 
 ##### Explicitly specified field type
 
-An ASF user specifies the field type in the form definition:
+The there is the case where a ASF user explicitly specifies the field type in the form definition:
 ```javascript
     {
         "key": "minimal_form_type",
@@ -132,17 +137,15 @@ The first argument is the name of the decorator, usually `bootstrapDecorator`. U
 The second argument is the name of your new form type, in this case `minimal`
 The third is the template we bind to it. 
 
-But wait, where is all the code? Basically it's then up to the template to use directives to
-implement whatever it likes to do. It does have some help though, lets look at template example and
-go through the basics.
-
 #### Finally register the directive
 
 To have the field type be made into a directive that ASF can invoke, it must be created and registered as such:
 ```javascript
-schemaFormDecoratorsProvider.createDirective('minimal',
-    'directives/decorators/bootstrap/minimal/angular-schema-form-minimal.html');
+    schemaFormDecoratorsProvider.createDirective('minimal',
+        'directives/decorators/bootstrap/minimal/angular-schema-form-minimal.html');
 ```
+
+At this stage, we might have a working add-in. However, normally, the template needs to be developed further:
 
 ### Scope and helper functions
 
@@ -152,7 +155,7 @@ Each form field will be rendered inside a decorator directive, created by the
 `schemaFormDecorators` factory service, *do*
 [check the source](https://github.com/Textalk/angular-schema-form/blob/master/src/services/decorators.js#L33).
 
-This means you have several helper functions and values on scope, most important of this `form`. The
+This means you have several helper functions and values on scope, most important of them, `form`. The
 `form` variable contains the merged form definition for that field, i.e. your supplied form object +
 the defaults from the schema (it also has its part of the schema under *form.schema*).
 This is how you define and use new form field options, whatever is set on the form object is
@@ -173,8 +176,7 @@ available here for you to act on.
 ### The magic $$value$$
 ASF wants to play nice with the built in Angular directives for form. 
 
-Especially `ng-model`
-which we want to handle the two way binding against our model value. Also by using `ng-model` we
+Especially `ng-model`, which we want to handle the two way binding against our model value. Also by using `ng-model` we
 get all the nice validation states from the `ngModelController` and `FormController` that we all
 know and love.
 
@@ -185,7 +187,9 @@ with the path to the current form field on the model, i.e. `form.key`.
 So `ng-model="$$value$$"` becomes something like `ng-model="model['person']['address']['street']"`,
 you can see this if you inspect the final form in the browser.
 
-So basically always have a `ng-model="$$value$$"` (Pro tip: ng-model is fine on any element, put
+*Hint: The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) actually prints out the value of $$value$$ in the second field.*
+
+So basically, you always have a `ng-model="$$value$$"` (Pro tip: ng-model is fine on any element, put
   it on the same div as your custom directive and require the ngModelController for full control).
 
 #### Deprecation warning
