@@ -1,7 +1,7 @@
 {
-  "name": "angular-schema-form-basic",
+  "name": "angular-schema-form-camelcase",
   "main": [
-    "basic.min.js"
+    "camelcase.min.js"
   ],
   "version": "0.1.0",
   "authors": [

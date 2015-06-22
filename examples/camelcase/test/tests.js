@@ -13,7 +13,7 @@ describe('Schema form', function() {
       })
     );
 
-    it('should return correct form type for format "color"',function(){
+    it('should return correct form type for format "camelcase"',function(){
       inject(function($compile,$rootScope, schemaForm){
         var string_schema = {
           type: "object",

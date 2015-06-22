@@ -20,13 +20,13 @@ gulp.task('minify', function() {
                   }))
                   .pipe(templateCache({
                     module: 'schemaForm',
-                    root: 'directives/decorators/bootstrap/basic/'
+                    root: 'directives/decorators/bootstrap/camelcase/'
                   }))
     );
   stream.queue(gulp.src('./src/*.js'));
 
   stream.done()
-        .pipe(concat('angular-schema-form-basic.min.js'))
+        .pipe(concat('angular-schema-form-camelcase.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('.'));
 
@@ -38,13 +38,13 @@ gulp.task('non-minified-dist', function() {
               gulp.src('./src/*.html')
                   .pipe(templateCache({
                     module: 'schemaForm',
-                    root: 'directives/decorators/bootstrap/basic/'
+                    root: 'directives/decorators/bootstrap/camelcase/'
                   }))
     );
   stream.queue(gulp.src('./src/*.js'));
 
   stream.done()
-        .pipe(concat('angular-schema-form-basic.js'))
+        .pipe(concat('angular-schema-form-camelcase.js'))
         .pipe(gulp.dest('.'));
 
 });

@@ -6,19 +6,5 @@ This folder contains examples of plug ins showcasing different aspects of the AS
 
 ## Basic
 
-The basic example just uses a normal input, and a button that re
+The basic example just uses a normal input, and a button that changes whatever string has been entered into camelCase.
 
-### Installation
-To use the example, enter its folder and run
-    
-    npm install bower
-    node_modules/bower/bin/bower install
-    
-This will first install bower, and then used the locally installed bower to install the project dependencies. 
-
-### Running
-
-You should now be able to run the example. In 
-
-
-### Building
