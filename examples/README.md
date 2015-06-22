@@ -2,7 +2,7 @@
 
 ## Angular schema form add-ons - Examples
 
-This folder contains examples of plug ins showcasing different aspects of the ASF add-on architecture.
+This folder contains examples of add-ons showcasing different aspects of the ASF add-on architecture.
 
 ## camelCase
 

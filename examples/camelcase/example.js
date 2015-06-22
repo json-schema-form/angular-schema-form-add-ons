@@ -64,6 +64,5 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
         $scope.$broadcast("schemaFormValidate");
         console.log($scope.model);
     };
-}])
-;
+}]);
 
