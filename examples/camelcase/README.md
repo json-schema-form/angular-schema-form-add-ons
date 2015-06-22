@@ -1,6 +1,6 @@
-camelCase addon
+camelCase add-on
 =================
-## The addon
+## The add-on
 
 This example presents a normal input field and a button that changes whatever string has been entered into camelCase.
 If uses:
