@@ -17,7 +17,7 @@ Looking for information and collaboration? Read on:
 ### [WIKI](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki)
 **ASF Version agnostic information, recommendations, guidelines, tutorials, tips & tricks**
 
-Please browse the articles at [wiki](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki)
+For that, please browse the articles at the [wiki](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki).
 
 ### [GITTER](https://gitter.im/OptimalBPM/angular-schema-form-add-ons) [![ASFAO gitter room https://gitter.im/OptimalBPM/angular-schema-form-add-ons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-add-ons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Discussions and questions about ASF plugin development in general**
