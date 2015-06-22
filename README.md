@@ -7,10 +7,11 @@
 
 Cooperation and communication is key for any healthy framework ecosystem. Problems and solutions that apply to one project are likely to apply to others.
 
-Hence this repository, where information, tools for and discussions about [Angular Schema Form](https://github.com/Textalk/angular-schema-form) add-on development are kept. 
-Its purpose is to flatten the learning curve for add-on development and provide a means to coordinate efforts.
 ## *H E Y !!*
 ***New to creating ASF add-ons? This is where to go: [Creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on).***
+
+Hence this repository, where information, tools for and discussions about [Angular Schema Form](https://github.com/Textalk/angular-schema-form) add-on development are kept. 
+Its purpose is to flatten the learning curve for add-on development and provide a means to coordinate efforts.
 
 Looking for information and collaboration? Read on:
 
