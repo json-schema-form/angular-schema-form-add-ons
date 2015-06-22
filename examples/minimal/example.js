@@ -20,32 +20,32 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
     // This to make the schema more portable, schemas are for validation and definition and can be used everywhere.
     $scope.schema = {
         type: "object",
-        title: "camelCase",
+        title: "Minimal",
         properties: {
-            camelcase_format: {
+            minimal_format: {
                 type: "string",
-                format: "camelcase",
-                description: "When you edit this, the value will become automatically camelCase:d."
+                format: "minimal",
+                description: "When you edit this, it is in the add-ons input box."
             },
-            camelcase_form_type: {
+            minimal_form_type: {
                 type: "string",
-                description: "When you edit this, the value will become equally camelCase:d."
+                description: "When you edit this, it is equally in the add-ons input box"
             }
         },
-        required: ["camelcase"]
+        required: ["minimal"]
     };
 
     // Define all UI aspects of the form
     $scope.form = [
 
         {
-            "key": "camelcase_format",
-            "title": "Example of camelCase editor via format"
+            "key": "minimal_format",
+            "title": "Example of minimal editor via format"
         },
         {
-            "key": "camelcase_form_type",
-            "title": "Example of camelCase editor via form type",
-            "type": "camelcase",
+            "key": "minimal_form_type",
+            "title": "Example of minimal editor via form type",
+            "type": "minimal",
             "some_setting": "true"
         },
         {
@@ -57,7 +57,7 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
     // Initiate the model
     $scope.model = {};
     // Initiate one of the inputs
-    $scope.model.camelcase_format = "default value";
+    $scope.model.minimal_format = "default value";
 
     // This is called by asf on submit, specified in example.html, ng-submit.
     $scope.submitted = function (form) {

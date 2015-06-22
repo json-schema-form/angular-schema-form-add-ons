@@ -1,0 +1,23 @@
+<!--
+This is the implementation of the view.
+
+All references to css classes here are for bootstrap classes, for them to work, Bootstrap has to be installed.
+
+IMPORTANT: The ASF magic $$value$$ will be changed by ASF into model['minimal_format'] or model['minimal_form_type']
+during compilation. This is the recommended way to access the model until there is a better solution.
+-->
+
+<!-- hasError is implemented by ASF and returns true if there is a validation error. -->
+<div ng-class="{'has-error': hasError()}">
+    <!-- The showTitle function is implemented by ASF, returns true if the title should be shown -->
+    <label ng-show="showTitle()">{{form.title}}</label>
+
+    <!-- This is the input-->
+    <div>
+        <!-- Bind the input to the model-->
+        <input ng-model="$$value$$"><span> <-- This is the minimal editor</span>
+    </div>
+    <!-- hasError() and the other functions are also defined by ASF, so this will either
+        show a validation error or the description -->
+    <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>
+</div>

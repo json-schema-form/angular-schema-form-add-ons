@@ -10,7 +10,15 @@ To play around with these, you need to clone this repository:
 
 This will create a local clone in the angular-schema-form-add-ons subfolder.
 
+Both examples will look better if you install them with bootstrap(the demos have bootstrap installed).
+
+## Minimal
+
+The [minimal example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/minimal) simply 
+uses an input to edit the model. It has a short text proving that it is the actual
+
 ## camelCase
 
-The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) just uses a normal input, and a button that changes whatever string has been entered into camelCase.
+The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) uses 
+a normal input, and a button that changes whatever string has been entered into camelCase.
 
