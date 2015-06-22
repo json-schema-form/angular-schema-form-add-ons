@@ -6,5 +6,5 @@ This folder contains examples of add-ons showcasing different aspects of the ASF
 
 ## camelCase
 
-The camelCase example just uses a normal input, and a button that changes whatever string has been entered into camelCase.
+The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) just uses a normal input, and a button that changes whatever string has been entered into camelCase.
 
