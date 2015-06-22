@@ -187,7 +187,7 @@ with the path to the current form field on the model, i.e. `form.key`.
 So `ng-model="$$value$$"` becomes something like `ng-model="model['person']['address']['street']"`,
 you can see this if you inspect the final form in the browser.
 
-*Hint: The [camelCase example](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/camelcase) actually prints out the value of $$value$$ in the second field.*
+*Hint: The [camelCase example demo](http://demo.optimalbpm.se/angular-schema-form-add-ons/examples/camelcase/example.html) actually prints out the value of $$value$$ in the second field.*
 
 So basically, you always have a `ng-model="$$value$$"` (Pro tip: ng-model is fine on any element, put
   it on the same div as your custom directive and require the ngModelController for full control).
