@@ -17,7 +17,7 @@ Look at the source for more information on how it works, it is overly documented
 ### Installation
 To use the example, enter the examples/minimal folder and run
     
-    npm install bower
+    sudo npm install bower
     node_modules/bower/bin/bower install
     
 This will first locally install bower, and then used that bower to install the project dependencies. 
@@ -32,7 +32,7 @@ You should now be able to open the example.html in the browser.
 
 First, install all build tools, in the examples/minimal folder, run
 
-    npm install
+    sudo npm install
 
 
 The cycle for development is change and then build. 
