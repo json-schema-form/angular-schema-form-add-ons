@@ -24,8 +24,9 @@ For that, please browse the articles at the [wiki](https://github.com/OptimalBPM
 
 These are conducted in the [gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-add-ons).
 
-### [HERE in the repository](https://github.com/OptimalBPM/angular-schema-form-add-ons/blob/master/README.md)
-**ASF add-on documentation, examples and tools**
+### [HERE in the repository](https://github.com/OptimalBPM/angular-schema-form-add-ons)
+**ASF add-on [documentation](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/documentation)
+, [examples](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples) and [tools](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/tools) **
 
 These are stored here, in this documentation and the files of this repository.
 For each ASF major version, the previous version gets its own branch.
