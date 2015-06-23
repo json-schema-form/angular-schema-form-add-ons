@@ -20,6 +20,6 @@ Usage: `create_new_add_on.py [-h] [--dest DEST] --name NAME --author AUTHOR`
 Example that creates an add-on at "~/development/test":
 
 ```bash
-python3.4 create_new_add_on.py --dest=~/development --name="test" --author="test"
+python3.4 create_new_add_on.py --dest=~/development --name="test" --author="Author Name"
 ```
  
