@@ -6,7 +6,7 @@ This folder contains tools for add-on development.
 
 ## create_new_add_on.py
 
-This is a python script that copies and renames the "minimal" example and its references to create a new add-on.
+This is a python script that copies and renames the ["minimal" example add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples/minimal) and its references to create a new add-on.
 
 Arguments:
 
