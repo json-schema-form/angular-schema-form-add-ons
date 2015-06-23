@@ -1,4 +1,4 @@
-__author__ = 'nibo'
+# Written by Steve R. Hastings, on stack overflow: http://stackoverflow.com/a/1597755/4072379
 
 import os
 import re
