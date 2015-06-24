@@ -22,28 +22,28 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
         type: "object",
         title: "Minimal",
         properties: {
-            minimal_format: {
+            minimalFormat: {
                 type: "string",
                 format: "minimal",
                 description: "When you edit this, it is in the add-ons input box."
             },
-            minimal_form_type: {
+            minimalFormType: {
                 type: "string",
-                description: "When you edit this, it is equally in the add-ons input box"
+                description: "When you edit this, which is required, it is equally in the add-ons input box"
             }
         },
-        required: ["minimal"]
+        required: ["minimalFormType"]
     };
 
     // Define all UI aspects of the form
     $scope.form = [
 
         {
-            "key": "minimal_format",
+            "key": "minimalFormat",
             "title": "Example of minimal editor via format"
         },
         {
-            "key": "minimal_form_type",
+            "key": "minimalFormType",
             "title": "Example of minimal editor via form type",
             "type": "minimal",
             "some_setting": "true"
@@ -57,7 +57,7 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
     // Initiate the model
     $scope.model = {};
     // Initiate one of the inputs
-    $scope.model.minimal_format = "default value";
+    $scope.model.minimalFormat = "default value";
 
     // This is called by asf on submit, specified in example.html, ng-submit.
     $scope.submitted = function (form) {

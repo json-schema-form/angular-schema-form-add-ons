@@ -22,28 +22,28 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
         type: "object",
         title: "camelCase",
         properties: {
-            camelcase_format: {
+            camelCaseFormat: {
                 type: "string",
                 format: "camelcase",
                 description: "When you edit this, the value will become automatically camelCase:d."
             },
-            camelcase_form_type: {
+            camelCaseFormType: {
                 type: "string",
-                description: "When you edit this, the value will become equally camelCase:d."
+                description: "When you edit this, which is required, the value will become equally camelCase:d."
             }
         },
-        required: ["camelcase"]
+        required: ["camelCaseFormType"]
     };
 
     // Define all UI aspects of the form
     $scope.form = [
 
         {
-            "key": "camelcase_format",
+            "key": "camelCaseFormat",
             "title": "Example of camelCase editor via format"
         },
         {
-            "key": "camelcase_form_type",
+            "key": "camelCaseFormType",
             "title": "Example of camelCase editor via form type",
             "type": "camelcase",
             "some_setting": "true"
@@ -57,7 +57,7 @@ exampleApp.controller("exampleController", ["$scope", function ($scope) {
     // Initiate the model
     $scope.model = {};
     // Initiate one of the inputs
-    $scope.model.camelcase_format = "default value";
+    $scope.model.camelCaseFormat = "default value";
 
     // This is called by asf on submit, specified in example.html, ng-submit.
     $scope.submitted = function (form) {
