@@ -1,0 +1,5 @@
+# Minimal .gitignore, you'd probably want to add project folders and so on.
+# Perhaps the common dev-folder should be added.
+
+bower_components
+node_modules
