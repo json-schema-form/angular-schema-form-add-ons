@@ -139,7 +139,7 @@ The third is the template we bind to it.
 
 *Note: The createDirective step has been deprecated and is no longer necessary*
 
-At this stage, we might have a working add-in. However, normally, the template needs to be developed further:
+At this stage, we might have a working add-on. However, normally, the template needs to be developed further:
 
 ### Scope and helper functions
 
