@@ -2,12 +2,12 @@
 
 # Angular schema form add-ons
 
-
-## *H E Y !!*
 ***New to creating ASF add-ons? This is where to go: [Creating a new add-on](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki/Creating-a-new-add-on).***
 
+Where is everything? This is how it is organized:
+
 ## [WIKI](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki)
-**ASF Version agnostic information, recommendations, guidelines, tutorials, tips & tricks**
+**ASF version independent information, recommendations, guidelines, tutorials, tips & tricks**
 
 For that, please browse the articles at the [wiki](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki).
 
@@ -16,7 +16,7 @@ For that, please browse the articles at the [wiki](https://github.com/OptimalBPM
 
 These are conducted in the [gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-add-ons).
 
-## [HERE in the repository](https://github.com/OptimalBPM/angular-schema-form-add-ons)
+## [HERE in the source repository](https://github.com/OptimalBPM/angular-schema-form-add-ons)
 **ASF add-on [documentation](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/documentation), [examples](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples) and [tools](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/tools)**
 
 These are stored here, in this documentation and the files of this repository.
