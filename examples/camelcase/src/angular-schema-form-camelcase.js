@@ -20,8 +20,6 @@ angular.module('schemaForm').config(['schemaFormProvider',
         // Second, we want it to show if someone have explicitly set the form type
         schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'camelcase',
             'directives/decorators/bootstrap/camelcase/angular-schema-form-camelcase.html');
-        schemaFormDecoratorsProvider.createDirective('camelcase',
-            'directives/decorators/bootstrap/camelcase/angular-schema-form-camelcase.html');
     }]);
 
 

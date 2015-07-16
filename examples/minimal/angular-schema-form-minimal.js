@@ -17,11 +17,9 @@ angular.module('schemaForm').config(['schemaFormProvider',
         };
         // Add our default to the defaults array
         schemaFormProvider.defaults.string.unshift(minimal);
-
+ 
         // Second, we want it to show if someone have explicitly set the form type
         schemaFormDecoratorsProvider.addMapping('bootstrapDecorator', 'minimal',
-            'directives/decorators/bootstrap/minimal/angular-schema-form-minimal.html');
-        schemaFormDecoratorsProvider.createDirective('minimal',
             'directives/decorators/bootstrap/minimal/angular-schema-form-minimal.html');
     }]);
 
