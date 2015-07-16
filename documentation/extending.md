@@ -137,15 +137,9 @@ The first argument is the name of the decorator, usually `bootstrapDecorator`. U
 The second argument is the name of your new form type, in this case `minimal`
 The third is the template we bind to it. 
 
-#### Finally register the directive
+*Note: The createDirective step has been deprecated and is no longer necessary*
 
-To have the field type be made into a directive that ASF can invoke, it must be created and registered as such:
-```javascript
-    schemaFormDecoratorsProvider.createDirective('minimal',
-        'directives/decorators/bootstrap/minimal/angular-schema-form-minimal.html');
-```
-
-At this stage, we might have a working add-in. However, normally, the template needs to be developed further:
+At this stage, we might have a working add-on. However, normally, the template needs to be developed further:
 
 ### Scope and helper functions
 
