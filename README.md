@@ -11,10 +11,10 @@ Where is everything? This is how it is organized:
 
 For that, please browse the articles at the [wiki](https://github.com/OptimalBPM/angular-schema-form-add-ons/wiki).
 
-### [Gitter chat room ](https://gitter.im/OptimalBPM/angular-schema-form-add-ons) [![ASFAO gitter room https://gitter.im/OptimalBPM/angular-schema-form-add-ons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-add-ons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+### [Gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-add-ons)
 **Discussions and questions about ASF plugin development in general**
 
-These are conducted in the [gitter chat room](https://gitter.im/OptimalBPM/angular-schema-form-add-ons).
+These are conducted in the [gitter chat room ](https://gitter.im/OptimalBPM/angular-schema-form-add-ons) [![ASFAO gitter room https://gitter.im/OptimalBPM/angular-schema-form-add-ons](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OptimalBPM/angular-schema-form-add-ons?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge).
 
 ### [HERE in the source repository](https://github.com/OptimalBPM/angular-schema-form-add-ons)
 **ASF add-on [documentation](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/documentation), [examples](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/examples) and [tools](https://github.com/OptimalBPM/angular-schema-form-add-ons/tree/master/tools)**
