@@ -3,6 +3,7 @@
 import os
 import re
 import sys
+import shutil
 
 # list of extensions to replace
 DEFAULT_REPLACE_EXTENSIONS = None
@@ -28,7 +29,7 @@ def file_replace(fname, pat, s_after):
         for line in f:
             out.write(re.sub(pat, s_after, line))
         out.close()
-        os.rename(out_fname, fname)
+        shutil.move(out_fname, fname)
 
 
 def mass_replace(dir_name, s_before, s_after, replace_extensions=DEFAULT_REPLACE_EXTENSIONS):
