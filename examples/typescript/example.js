@@ -1,5 +1,5 @@
 /**
- * Created by Nicklas B on 2015-06-21.
+ * Created by Nicklas B on 2016-01-13.
  */
 
 /*global angular */
