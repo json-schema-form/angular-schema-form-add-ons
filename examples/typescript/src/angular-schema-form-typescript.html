@@ -1,0 +1,32 @@
+<!--
+This is the implementation of the view. When the button is clicked, the value in the model is camelCase:d.
+
+It uses a directive to get to the ngModel properly.
+If you have no need to modify ngModel directly, you can also just use a controller, no need for a directive.
+If you have no need to for any local, behind-the-scenes logic, you might not need a controller at all.
+
+All references to css classes here are for bootstrap classes, for them to work, Bootstrap has to be installed.
+
+IMPORTANT: The ASF magic $$value$$ will be changed by ASF into model['camelcase_format'] or model['camelcase_form_type']
+during compilation. This is the recommended way to access the model until there is a better solution.
+-->
+
+<!-- hasError is implemented by ASF and returns true if there is a validation error. -->
+<div ng-class="{'has-error': hasError()}">
+    <!-- The showTitle function is implemented by ASF, returns true if the title should be shown -->
+    <label ng-show="showTitle()">{{form.title}}</label>
+
+    <!-- Specify the model for the directive and add the directive, making the controller available to the children-->
+    <div ng-model="$$value$$" type-script-directive>
+        <!-- Bind the input to the model-->
+        <input ng-model="$$value$$">
+        <!-- Add a button that applies camelCase on the model by calling the controllers' function -->
+        <button type="button" ng-click="controller.makeCamelCase()">camelCase it</button>
+    </div>
+    <!-- hasError() and the other functions are also defined by ASF, so this will either
+        show a validation error or the description -->
+    <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>
+    <br />
+    <!-- The some_setting-setting we set in example.js is available here -->
+    <span ng-show="form.some_setting">The some setting-setting is true for the model at $$value$$!</span>
+</div>
